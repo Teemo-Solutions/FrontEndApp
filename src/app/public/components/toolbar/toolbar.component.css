@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: black;
+}
+
+ .button-login{
+   width: 101.25px;
+   height: 50.5px;
+   color: #e0e0e0;
+   border-radius: 30px;
+   background: #300D30;
+}
+
+ .button-login:hover{
+   box-shadow: black 0px 0px 10px;
+ }
