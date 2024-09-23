@@ -5,7 +5,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {MatTab, MatTabGroup} from "@angular/material/tabs";
 
 @Component({
-  selector: 'app-toolbar',
+  selector: 'app-toolbar-content',
   standalone: true,
   imports: [
     MatIcon,
@@ -14,9 +14,9 @@ import {MatTab, MatTabGroup} from "@angular/material/tabs";
     MatTabGroup,
     MatTab
   ],
-  templateUrl: './toolbar.component.html',
-  styleUrl: './toolbar.component.css'
+  templateUrl: './toolbar-content.component.html',
+  styleUrl: './toolbar-content.component.css'
 })
-export class ToolbarComponent {
+export class ToolbarContentComponent {
 
 }
