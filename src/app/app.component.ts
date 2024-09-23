@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {ToolbarComponent} from "./public/components/toolbar/toolbar.component";
+import {ToolbarContentComponent} from "./public/components/toolbar-content/toolbar-content.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ToolbarComponent],
+  imports: [RouterOutlet, ToolbarContentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
