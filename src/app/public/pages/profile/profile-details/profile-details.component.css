@@ -1,0 +1,12 @@
+.profile-details {
+  margin-top: 20px;
+}
+
+.profile-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-details li {
+  margin: 10px 0;
+}

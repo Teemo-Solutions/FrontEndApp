@@ -7,18 +7,6 @@
   color: black;
 }
 
- .button-login, .button-profile{
-   width: 101.25px;
-   height: 50.5px;
-   color: white;
-   border-radius: 30px;
-   background: #300D30;
-}
-
- .button-login:hover, .button-profile:hover{
-   box-shadow: black 0 0 10px;
- }
-
 .logo-image {
   width: 50px;
   height: auto;

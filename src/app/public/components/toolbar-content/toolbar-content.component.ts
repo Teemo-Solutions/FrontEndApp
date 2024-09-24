@@ -5,6 +5,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {MatTab, MatTabGroup} from "@angular/material/tabs";
 import {FooterContentComponent} from "../footer-content/footer-content.component";
 import {Router, RouterLink} from "@angular/router";
+import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-toolbar-content',
@@ -16,7 +17,8 @@ import {Router, RouterLink} from "@angular/router";
     MatTabGroup,
     MatTab,
     FooterContentComponent,
-    RouterLink
+    RouterLink,
+    MatButton
   ],
   templateUrl: './toolbar-content.component.html',
   styleUrl: './toolbar-content.component.css'

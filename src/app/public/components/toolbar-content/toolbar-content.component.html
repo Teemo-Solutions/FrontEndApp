@@ -11,21 +11,9 @@
         <mat-tab label="Subscriptions"></mat-tab>
       </mat-tab-group>
     </div>
-    <div>
-      <button class="button-login">
-        <a routerLink=".">
-          <mat-icon>login</mat-icon>
-          Login
-        </a>
-      </button>
-
-      <button class="button-profile">
-        <a routerLink="/profile">
-          <mat-icon>account_circle</mat-icon>
-          Profile
-        </a>
-      </button>
-
+    <div class="container-buttons">
+      <button mat-raised-button color="primary" routerLink="."> <mat-icon>login</mat-icon> Login </button>
+      <button mat-raised-button color="primary" routerLink="/profile"> <mat-icon>account_circle</mat-icon> Profile </button>
     </div>
   </div>
 </mat-toolbar>
