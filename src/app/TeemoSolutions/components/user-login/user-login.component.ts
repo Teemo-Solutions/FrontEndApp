@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { EmailInputComponent } from "../../../public/components/email-input/email-input.component";
+import { PasswordInputComponent } from "../../../public/components/password-input/password-input.component";
+
 import {
   MatCard,
   MatCardContent,
@@ -10,6 +12,7 @@ import {
 } from "@angular/material/card";
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
+import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-user-login',
@@ -24,7 +27,9 @@ import {MatInput} from "@angular/material/input";
     MatCardSubtitle,
     MatCardTitleGroup,
     MatCardHeader,
-    EmailInputComponent
+    EmailInputComponent,
+    PasswordInputComponent,
+    MatButton
   ],
   templateUrl: './user-login.component.html',
   styleUrl: './user-login.component.css'

@@ -10,3 +10,35 @@
   align-items: center;
   height: 100%;
 }
+
+.login-logo {
+  width: 100px;
+  height: 100px;
+
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+mat-card-title {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.titles-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+mat-card-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+

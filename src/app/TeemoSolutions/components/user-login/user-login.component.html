@@ -1,14 +1,22 @@
 <div class="login-container">
 <mat-card class="login-card" appearance="outlined">
-  <mat-card-header>
-    <mat-card-title-group>
-      <mat-card-title>Vortex</mat-card-title>
-      <mat-card-subtitle>Log In</mat-card-subtitle>
-      <img mat-card-sm-image src="/assets/vortex_icon.png" >
-    </mat-card-title-group>
+  <mat-card-header class="card-header">
+
+      <img mat-card-sm-image src="/assets/vortex_icon.png" class="login-logo" >
+
+
   </mat-card-header>
+  <mat-card-title-group class="titles-container">
+    <mat-card-title>Vortex</mat-card-title>
+    <mat-card-subtitle>Log In</mat-card-subtitle>
+  </mat-card-title-group>
   <mat-card-content>
-    <email-input></email-input>
+    <form>
+    <email-input class="email-input"></email-input>
+    <password-input></password-input>
+    <button mat-raised-button class="login-button" >Log In</button>
+    </form>
+    <p>Don´t have an account? Register</p>
   </mat-card-content>
 </mat-card>
 </div>
