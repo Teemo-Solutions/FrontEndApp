@@ -1,10 +1,11 @@
+// src/app/public/components/toolbar-content/toolbar-content.component.ts
 import { Component } from '@angular/core';
-import {MatIcon} from "@angular/material/icon";
-import {MatToolbar} from "@angular/material/toolbar";
-import {NgOptimizedImage} from "@angular/common";
-import {MatTab, MatTabGroup} from "@angular/material/tabs";
-import {FooterContentComponent} from "../footer-content/footer-content.component";
-import {Router, RouterLink} from "@angular/router";
+import { MatIcon } from "@angular/material/icon";
+import { MatToolbar } from "@angular/material/toolbar";
+import { NgOptimizedImage } from "@angular/common";
+import { MatTab, MatTabGroup } from "@angular/material/tabs";
+import { FooterContentComponent } from "../footer-content/footer-content.component";
+import { Router, RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-toolbar-content',
@@ -39,9 +40,11 @@ export class ToolbarContentComponent {
       case 3:
         this.router.navigate(['/subscriptions']);
         break;
+      case 4:
+        this.router.navigate(['/profile']);
+        break;
       default:
         break;
     }
   }
 }
-
