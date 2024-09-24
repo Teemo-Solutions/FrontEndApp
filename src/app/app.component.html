@@ -1,2 +1,4 @@
-<app-toolbar-content></app-toolbar-content>
+<app-toolbar-content>@for (option of options; track option.title) {
+  <a mat-button [routerLink]="option.path">{{ option.title }}</a>
+}</app-toolbar-content><router-outlet></router-outlet>
 <app-footer-content></app-footer-content>

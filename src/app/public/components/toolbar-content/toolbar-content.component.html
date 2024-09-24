@@ -1,27 +1,23 @@
 <mat-toolbar class="header">
-
   <div class="container">
     <div>
       <img src="assets/vortex_icon.png" alt="vortex logo" class="logo-image">
     </div>
-
     <div>
-      <mat-tab-group>
+      <mat-tab-group (selectedTabChange)="onTabChange($event)">
         <mat-tab label="Home"></mat-tab>
         <mat-tab label="About"></mat-tab>
         <mat-tab label="Contact"></mat-tab>
-        <mat-tab label="Subscritions"></mat-tab>
-        <mat-tab label="Contact"></mat-tab>
+        <mat-tab label="Subscriptions"></mat-tab>
       </mat-tab-group>
     </div>
-
-      <div >
-          <button class="button-login">
-            <a mat-fab extended routerLink=".">
-              <mat-icon>login</mat-icon>
-              Login
-            </a>
-          </button>
-        </div>
+    <div>
+      <button class="button-login">
+        <a mat-fab extended routerLink=".">
+          <mat-icon>login</mat-icon>
+          Login
+        </a>
+      </button>
+    </div>
   </div>
 </mat-toolbar>
