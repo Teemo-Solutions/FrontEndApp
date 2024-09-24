@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GameCardComponent } from '../game-card/game-card.component';
+import { GameCardComponent } from '../../../TeemoSolutions/components/game-card/game-card.component';
 
 @Component({
   standalone: true,
