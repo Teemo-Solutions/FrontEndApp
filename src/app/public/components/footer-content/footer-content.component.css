@@ -1,12 +1,12 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 100px;
   background-color: #0a1e32;
   color: white;
   bottom: 0;
   position: absolute;
-  width: 94.9%;
+  width: 87.2%;
 }
 
 .footer-content {
