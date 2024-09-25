@@ -1,12 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { GameService } from '../../services/game.service';
+import { GameCardComponent } from '../game-card/game-card.component';
 
 @Component({
-  selector: 'app-game-list',
   standalone: true,
-  imports: [],
+  selector: 'app-game-list',
   templateUrl: './game-list.component.html',
-  styleUrl: './game-list.component.css'
+  styleUrls: ['./game-list.component.css'],
+  imports: [CommonModule, GameCardComponent]
 })
-export class GameListComponent {
+export class GameListComponent implements OnInit {
+  games: any[] = [];
 
+  constructor(private gameService: GameService) {}
+
+  ngOnInit() {
+    this.gameService.getGames().subscribe((data: any[]) => {
+      this.games = data.map((game: any) => ({
+        title: game.title,
+        image: game.image
+      }));
+    });
+  }
 }
