@@ -1,0 +1,11 @@
+.home-container {
+  background-color: #300D30; /* Fondo oscuro */
+  color: white; /* Texto claro */
+  padding: 20px;
+  text-align: center; /* Centra el contenido */
+}
+
+.game-list-title {
+  color: white; /* Color blanco para el título */
+  margin-bottom: 20px;
+}
