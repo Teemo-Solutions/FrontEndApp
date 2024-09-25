@@ -3,11 +3,11 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  padding: 150px;
   background-color: #081828;
   color: white;
   bottom: 0;
-  position: absolute;
+  position: relative;
   width: 87.2%;
   font-family: 'DM Sans', sans-serif;
 }
