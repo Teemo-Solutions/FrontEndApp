@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { GameService } from '../../services/game.service';
 
 @Component({
   selector: 'app-game-card',
-  standalone: true,
-  imports: [],
   templateUrl: './game-card.component.html',
-  styleUrl: './game-card.component.css'
+  standalone: true,
+  styleUrls: ['./game-card.component.css']
 })
-export class GameCardComponent {
 
+export class GameCardComponent {
+  @Input() game!: { title: string; image: string };
 }
