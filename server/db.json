@@ -1,0 +1,22 @@
+{
+  "juegos": [
+    {
+      "nombre": "Juego A",
+      "género": "Aventura",
+      "plataforma": "PC",
+      "desarrollador": {
+        "nombre": "Maria García",
+        "email": "mariagarcia@developer.com"
+      }
+    },
+    {
+      "nombre": "Juego B",
+      "género": "Acción",
+      "plataforma": "PlayStation",
+      "desarrollador": {
+        "nombre": "Maria García",
+        "email": "mariagarcia@developer.com"
+      }
+    }
+  ]
+}
