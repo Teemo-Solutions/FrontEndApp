@@ -1,0 +1,33 @@
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 16px;
+  margin-top: 80px;
+}
+
+.game-card {
+  border: 1px solid #000000;
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden;
+  transition: transform 0.2s; /* Efecto de hover */
+  background-color: #300D30; /* Fondo oscuro */
+  color: black; /* Texto claro */
+}
+
+.game-card:hover {
+  transform: scale(1.05); /* Efecto de agrandar al pasar el mouse */
+}
+
+.game-image {
+  width: 100%;
+  height: auto;
+}
+
+.game-list-container {
+  margin-top: 80px;
+}
+
+.game-card h3 {
+  color: black; /* Color blanco para los nombres de los juegos */
+}

@@ -1,0 +1,19 @@
+<mat-toolbar class="header">
+  <div class="container">
+    <div>
+      <img src="assets/vortex_icon.png" alt="vortex logo" class="logo-image">
+    </div>
+    <div>
+      <mat-tab-group (selectedTabChange)="onTabChange($event)">
+        <mat-tab label="Home"></mat-tab>
+        <mat-tab label="About"></mat-tab>
+        <mat-tab label="Contact"></mat-tab>
+        <mat-tab label="Subscriptions"></mat-tab>
+      </mat-tab-group>
+    </div>
+    <div class="container-buttons">
+      <button mat-raised-button color="primary" routerLink="."> <mat-icon>login</mat-icon> Login </button>
+      <button mat-raised-button color="primary" routerLink="/profile"> <mat-icon>account_circle</mat-icon> Profile </button>
+    </div>
+  </div>
+</mat-toolbar>

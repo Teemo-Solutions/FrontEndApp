@@ -1,0 +1,68 @@
+.planes-suscripcion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #300D30;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+}
+
+.plan-header {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.plan-header h2 {
+  color: #300D30;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.plan-caracteristicas ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.plan-caracteristicas li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px; /* Agrega un margen inferior para el espacio */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.plan-caracteristicas li::before {
+  content: '✔';
+  color: green;
+  position: absolute;
+  left: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.plan-precio {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.plan-caracteristicas {
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.plan-botones {
+  padding: 10px;
+  text-align: center;
+}
+
+.plan-botones button {
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif;
+}

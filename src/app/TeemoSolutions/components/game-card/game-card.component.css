@@ -1,0 +1,36 @@
+.game-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.game-image {
+  width: 100%;
+  height: 200px; /* Ajusta la altura como necesites */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+h3 {
+  font-size: 18px; /* Tamaño de la fuente para el título */
+  margin: 0; /* Elimina el margen para quitar espacio en blanco */
+  padding: 0; /* Elimina el padding */
+  text-align: center; /* Centra el título */
+}
+
+p {
+  display: none;
+}
+
+.game-card:hover {
+  transform: scale(1.05); /* Efecto de hover */
+}
