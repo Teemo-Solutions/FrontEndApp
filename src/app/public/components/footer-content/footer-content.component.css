@@ -3,8 +3,8 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 100px;
-  background-color: #081828;
+  padding: 150px;
+  background-color: #317f43;
   color: white;
   bottom: 0;
   position: relative;
@@ -35,16 +35,17 @@
   text-decoration: none;
 }
 
-.footer-bottom{
+.footer-bottom {
   text-align: left;
   padding-top: 45px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   bottom: 0;
-  position: absolute;
+  position: relative;
+  background-color: #317f43;
   width: 100%;
   color: white;
   display: flex;
-
+  margin-top: 0; /* Ajusta este valor según sea necesario */
 }
 
 mat-form-field {
