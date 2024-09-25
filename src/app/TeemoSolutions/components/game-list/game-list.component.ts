@@ -16,11 +16,10 @@ export class GameListComponent implements OnInit {
   constructor(private gameService: GameService) {}
 
   ngOnInit() {
-    this.gameService.getGames().subscribe((data: { juegos: any[]; }) => {
-      this.games = data.juegos.map((game: any) => ({
-        title: game.nombre,
-        description: game.género,  // Puedes personalizarlo con más información
-        image: 'assets/games/game1.png'  // Cambia esto por una imagen real si la tienes
+    this.gameService.getGames().subscribe((data: any[]) => {
+      this.games = data.map((game: any) => ({
+        title: game.title,
+        image: game.image
       }));
     });
   }
