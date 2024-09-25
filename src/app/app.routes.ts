@@ -13,7 +13,7 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'subscriptions', component: SubscriptionsComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' } // Redirecciona a 'home' por defecto
+  { path: ' ', redirectTo: '/home', pathMatch: 'full' } // Redirecciona a 'home' por defecto
 ];
 
 @NgModule({
