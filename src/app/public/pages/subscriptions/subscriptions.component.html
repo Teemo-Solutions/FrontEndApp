@@ -1,1 +1,21 @@
-<p>subscriptions works!</p>
+<div class="planes-suscripcion">
+  <div class="plan" *ngFor="let plan of planes">
+    <div class="plan-header">
+      <h2>{{ plan.nombre }}</h2>
+      <p>{{ plan.descripcion }}</p>
+    </div>
+    <div class="plan-precio">
+      <h3>{{ plan.precio | currency }}</h3>
+      <p>{{ plan.periodo }}</p>
+    </div>
+    <div class="plan-caracteristicas">
+      <ul>
+        <li *ngFor="let caracteristica of plan.caracteristicas"> {{ caracteristica }} </li>
+      </ul>
+    </div>
+    <div class="plan-botones">
+      <button mat-raised-button color="primary" (click)="seleccionarPlan(plan)">Seleccionar</button>
+      <button mat-raised-button color="accent" (click)="verMas(plan)">Ver más</button>
+    </div>
+  </div>
+</div>
