@@ -1,0 +1,26 @@
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 16px;
+  margin-top: 80px;
+}
+
+.game-card {
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden;
+  transition: transform 0.2s; /* Efecto de hover */
+}
+
+.game-card:hover {
+  transform: scale(1.05); /* Efecto de agrandar al pasar el mouse */
+}
+
+.game-image {
+  width: 100%;
+  height: auto;
+}
+.game-list-container {
+  margin-top: 80px;
+}

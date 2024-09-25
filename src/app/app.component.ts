@@ -5,11 +5,12 @@ import {FooterContentComponent} from "./public/components/footer-content/footer-
 import {MatCard, MatCardContent} from "@angular/material/card";
 import {MatAnchor} from "@angular/material/button";
 import {MatToolbar} from "@angular/material/toolbar";
+import {GameListComponent} from "./TeemoSolutions/components/game-list/game-list.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ToolbarContentComponent, FooterContentComponent, MatCardContent, MatCard, MatAnchor, RouterLink, MatToolbar],
+  imports: [RouterOutlet, ToolbarContentComponent, FooterContentComponent, MatCardContent, MatCard, MatAnchor, RouterLink, MatToolbar, GameListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
