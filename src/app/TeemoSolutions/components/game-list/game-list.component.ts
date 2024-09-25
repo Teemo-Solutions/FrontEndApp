@@ -33,22 +33,7 @@ export class GameListComponent {
     { id: 20, title: 'Manacircle', description: 'Description 2', image: 'assets/games/game20.png' },
     { id: 21, title: 'Dragon ball Sparking Zero', description: 'Description 2', image: 'assets/games/game21.png' },
     { id: 22, title: 'My red Panda', description: 'Description 2', image: 'assets/games/game22.png' },
-    { id: 23, title: 'Eternal Hope', description: 'Description 2', image: 'assets/games/game23.png' },
-    { id: 24, title: 'Golden Light', description: 'Description 2', image: 'assets/games/game24.png' },
-    { id: 25, title: 'Toasty: Ashes of Dusk', description: 'Description 2', image: 'assets/games/game25.png' },
-    { id: 26, title: 'Catju Adventures', description: 'Description 2', image: 'assets/games/game26.png' },
-    { id: 27, title: 'WARBORN', description: 'Description 2', image: 'assets/games/game27.png' },
-    { id: 28, title: 'Scarlet Hollow', description: 'Description 2', image: 'assets/games/game28.png' },
-    { id: 29, title: 'The Captain', description: 'Description 2', image: 'assets/games/game29.png' },
-    { id: 30, title: 'Pixel Heist', description: 'Description 2', image: 'assets/games/game30.png' },
-    { id: 31, title: 'Paper Tanks', description: 'Description 2', image: 'assets/games/game31.png' },
-    { id: 32, title: 'Rabbit story', description: 'Description 2', image: 'assets/games/game32.png' },
-    { id: 33, title: 'Underhero', description: 'Description 2', image: 'assets/games/game33.png' },
-    { id: 34, title: 'Raji: An Ancient Epic', description: 'Description 2', image: 'assets/games/game34.png' },
-    { id: 35, title: 'Pile Up', description: 'Description 2', image: 'assets/games/game35.png' },
-    { id: 36, title: 'Only if', description: 'Description 2', image: 'assets/games/game36.png' },
   ];
-
 
   constructor() {
     console.log(this.games);
