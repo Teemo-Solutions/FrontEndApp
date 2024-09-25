@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CurrencyPipe, NgForOf} from "@angular/common";
 import {MatButton} from "@angular/material/button";
+import {Router} from "@angular/router";
 
 interface Plan {
   nombre: string;
@@ -51,7 +52,7 @@ export class SubscriptionsComponent implements OnInit {
 
   seleccionado: Plan | null = null;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -63,5 +64,9 @@ export class SubscriptionsComponent implements OnInit {
 
   verMas(plan: Plan): void {
     console.log(`Ver más información sobre el plan ${plan.nombre}`);
+  }
+
+  redirigirAlPerfil(): void {
+    this.router.navigate(['/profile']);
   }
 }

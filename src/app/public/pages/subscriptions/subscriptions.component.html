@@ -10,12 +10,12 @@
     </div>
     <div class="plan-caracteristicas">
       <ul>
-        <li *ngFor="let caracteristica of plan.caracteristicas"> {{ caracteristica }} </li>
+        <li *ngFor="let caracteristica of plan.caracteristicas">{{ caracteristica }}</li>
       </ul>
     </div>
     <div class="plan-botones">
-      <button mat-raised-button color="primary" (click)="seleccionarPlan(plan)">Seleccionar</button>
-      <button mat-raised-button color="accent" (click)="verMas(plan)">Ver más</button>
+      <button mat-raised-button color="primary" (click)="redirigirAlPerfil()">Seleccionar</button>
+      <button mat-raised-button color="accent" (click)="redirigirAlPerfil()">Ver más</button>
     </div>
   </div>
 </div>
