@@ -3,7 +3,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 70px;
+  padding: 150px;
   background-color: #317f43;
   color: white;
   bottom: 0;
