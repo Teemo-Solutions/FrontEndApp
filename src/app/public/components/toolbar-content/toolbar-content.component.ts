@@ -6,6 +6,7 @@ import {MatTab, MatTabGroup} from "@angular/material/tabs";
 import {FooterContentComponent} from "../footer-content/footer-content.component";
 import {Router, RouterLink} from "@angular/router";
 import {MatButton} from "@angular/material/button";
+import {LanguageSwitcherComponent} from "../language-switcher/language-switcher.component";
 
 @Component({
   selector: 'app-toolbar-content',
@@ -18,7 +19,8 @@ import {MatButton} from "@angular/material/button";
     MatTab,
     FooterContentComponent,
     RouterLink,
-    MatButton
+    MatButton,
+    LanguageSwitcherComponent
   ],
   templateUrl: './toolbar-content.component.html',
   styleUrl: './toolbar-content.component.css'
