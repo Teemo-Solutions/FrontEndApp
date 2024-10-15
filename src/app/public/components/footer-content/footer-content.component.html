@@ -1,47 +1,49 @@
-<mat-toolbar color="primary" class="footer">
+<footer class="footer">
   <div class="footer-content">
-    <div class="footer-section">
+    <section class="footer-section brand">
       <img src="assets/icons/white-logo.svg" alt="Vortex Logo" class="logo" />
-      <p>Adéntrate en lo desconocido!</p>
-      <p>Síguenos en:</p>
-      <div class="social-icons">
+      <p>{{ 'footer.enter-to-the-unknown' | translate }}</p>
+      <nav class="social-icons">
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
+      </nav>
+    </section>
 
-    <div class="footer-section">
-      <h3>Soluciones</h3>
+    <section class="footer-section">
+      <h3>{{ 'footer.solutions' | translate }}</h3>
       <ul>
-        <li><a href="#">Suscripciones</a></li>
-        <li><a href="#">Análisis</a></li>
+        <li><a href="#">{{ 'footer.subscription.plural' | translate }}</a></li>
+        <li><a href="#">{{ 'footer.analysis' | translate }}</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-section">
-      <h3>Soporte</h3>
+    <section class="footer-section">
+      <h3>{{ 'footer.support' | translate }}</h3>
       <ul>
-        <li><a href="#">Documentación</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#">{{ 'footer.documentation' | translate }}</a></li>
+        <li><a href="#">{{ 'footer.contact' | translate }}</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-section">
-      <h3>Suscríbete</h3> <br>
-      <p>¿Quieres unirte a nosotros?</p>
+    <section class="footer-section">
+      <h3>{{ 'footer.subscription.subscribe' | translate }}</h3>
+      <p>{{ 'footer.do you want to join us' | translate }}</p>
       <mat-form-field appearance="outline">
-        <input matInput placeholder="Email address">
+        <input matInput [placeholder]="'footer.email-address' | translate ">
         <button mat-icon-button matSuffix>
           <mat-icon>mail</mat-icon>
         </button>
       </mat-form-field>
-    </div>
+    </section>
   </div>
-</mat-toolbar>
 
-<div class="footer-bottom">
-  <p>© 2024 Vortex – All Rights Reserved</p>
-</div>
+  <div class="footer-bottom">
+    <p>© 2024 Vortex – {{ 'footer.all-rights-reserved' | translate }}</p>
+  </div>
+
+  <!-- Botón para volver al principio -->
+  <button class="scroll-to-top" (click)="scrollToTop()">&#8679;</button>
+</footer>
