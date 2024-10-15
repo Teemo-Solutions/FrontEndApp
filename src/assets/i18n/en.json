@@ -1,0 +1,23 @@
+{
+  "footer": {
+    "subscription": {
+      "plural": "Subscriptions",
+      "singular": "Subscription",
+      "subscribe": "Subscribe"
+    },
+    "solutions": "Solutions",
+    "documentation": "Documentation",
+    "support": "Support",
+    "analysis": "Analysis",
+    "contact": "Contact",
+    "do-you-want-to-join-us": "Do you want to join us?",
+    "mail": "Mail",
+    "enter-to-the-unknown": "Enter to the unknown!",
+    "all-rights-reserved": "All rights reserved",
+    "email-address": "Email address"
+  },
+  "home": {
+    "game-list": "Game List",
+    "follow-us": "Follow us on"
+  }
+}
