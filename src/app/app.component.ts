@@ -6,6 +6,7 @@ import {MatCard, MatCardContent} from "@angular/material/card";
 import {MatAnchor} from "@angular/material/button";
 import {MatToolbar} from "@angular/material/toolbar";
 import {GameListComponent} from "./TeemoSolutions/components/game-list/game-list.component";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -23,4 +24,9 @@ export class AppComponent {
     { path: '/contact', title: 'Contact'},
     { path: '/subscriptions', title: 'Subscriptions'},
   ]
+
+  constructor( translate: TranslateService) {
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
 }
