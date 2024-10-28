@@ -17,10 +17,7 @@ export class GameListComponent implements OnInit {
 
   ngOnInit() {
     this.gameService.getGames().subscribe((data: any[]) => {
-      this.games = data.map((game: any) => ({
-        title: game.title,
-        image: game.image
-      }));
+      this.games = data;
     });
   }
 }
