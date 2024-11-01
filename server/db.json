@@ -1,18 +1,231 @@
 {
   "games": [
-    { "id": 1, "title": "The Last of Us part II", "image": "assets/games/game1.png" },
-    { "id": 2, "title": "Space Cat", "image": "assets/games/game2.png" },
-    { "id": 3, "title": "Hive", "image": "assets/games/game3.png" },
-    { "id": 4, "title": "Neon Tail", "image": "assets/games/game4.png" },
-    { "id": 5, "title": "Genshin Impact", "image": "assets/games/game5.png" },
-    { "id": 6, "title": "EA FC 25", "image": "assets/games/game6.png" },
-    { "id": 7, "title": "League of Legends", "image": "assets/games/game7.png" },
-    { "id": 8, "title": "Minecraft", "image": "assets/games/game8.png" },
-    { "id": 9, "title": "Shapik", "image": "assets/games/game9.png" },
-    { "id": 10, "title": "World off Warships", "image": "assets/games/game10.png" },
-    { "id": 11, "title": "Railgunners", "image": "assets/games/game11.png" },
-    { "id": 12, "title": "Faerie Afterlight", "image": "assets/games/game12.png" },
-    { "id": 13, "title": "HeartBound", "image": "assets/games/game13.png" },
+    {
+      "id": 1,
+      "title": "The Last of Us part II",
+      "image": "assets/games/game1.png",
+      "description": "A post-apocalyptic action-adventure game set in a world overrun by infected humans.",
+      "developer": "Naughty Dog",
+      "publisher": "Sony Interactive Entertainment",
+      "releaseDate": "2020-06-19",
+      "genre": ["Action", "Adventure", "Survival"],
+      "platforms": ["PlayStation 4", "PlayStation 5"],
+      "rating": 4.8,
+      "downloads": 10000000,
+      "screenshots": [
+        "assets/games/game1_screenshot1.png",
+        "assets/games/game1_screenshot2.png",
+        "assets/games/game1_screenshot3.png"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Space Cat",
+      "image": "assets/games/game2.png",
+      "description": "A fun platformer where you control a cat in outer space.",
+      "developer": "Space Studios",
+      "publisher": "Indie Cat Games",
+      "releaseDate": "2021-03-15",
+      "genre": ["Platformer", "Adventure"],
+      "platforms": ["PC", "Nintendo Switch"],
+      "rating": 4.3,
+      "downloads": 200000,
+      "screenshots": [
+        "assets/games/game2_screenshot1.png",
+        "assets/games/game2_screenshot2.png",
+        "assets/games/game2_screenshot3.png"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Hive",
+      "image": "assets/games/game3.png",
+      "description": "A strategic board game adaptation with insects as the main characters.",
+      "developer": "Board Games Inc.",
+      "publisher": "Bee Hive Publishers",
+      "releaseDate": "2019-09-10",
+      "genre": ["Strategy", "Board Game"],
+      "platforms": ["PC", "iOS", "Android"],
+      "rating": 4.6,
+      "downloads": 500000,
+      "screenshots": [
+        "assets/games/game3_screenshot1.png",
+        "assets/games/game3_screenshot2.png"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Neon Tail",
+      "image": "assets/games/game4.png",
+      "description": "A vibrant, fast-paced rollerblading game set in a futuristic city.",
+      "developer": "Neon Games",
+      "publisher": "Roller Corp",
+      "releaseDate": "2022-05-22",
+      "genre": ["Racing", "Action"],
+      "platforms": ["PC", "PlayStation 5", "Xbox Series X"],
+      "rating": 4.2,
+      "downloads": 750000,
+      "screenshots": [
+        "assets/games/game4_screenshot1.png",
+        "assets/games/game4_screenshot2.png"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Genshin Impact",
+      "image": "assets/games/game5.png",
+      "description": "An open-world action RPG with stunning visuals and elemental combat.",
+      "developer": "miHoYo",
+      "publisher": "miHoYo",
+      "releaseDate": "2020-09-28",
+      "genre": ["Action", "RPG"],
+      "platforms": ["PC", "PlayStation 5", "Android", "iOS"],
+      "rating": 4.7,
+      "downloads": 40000000,
+      "screenshots": [
+        "assets/games/game5_screenshot1.png",
+        "assets/games/game5_screenshot2.png",
+        "assets/games/game5_screenshot3.png"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "EA FC 25",
+      "image": "assets/games/game6.png",
+      "description": "A football simulation game with advanced graphics and real-world team updates.",
+      "developer": "EA Sports",
+      "publisher": "Electronic Arts",
+      "releaseDate": "2024-09-01",
+      "genre": ["Sports", "Simulation"],
+      "platforms": ["PC", "PlayStation 5", "Xbox Series X"],
+      "rating": 4.5,
+      "downloads": 2500000,
+      "screenshots": [
+        "assets/games/game6_screenshot1.png",
+        "assets/games/game6_screenshot2.png",
+        "assets/games/game6_screenshot3.png"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "League of Legends",
+      "image": "assets/games/game7.png",
+      "description": "A multiplayer online battle arena where teams of champions battle for supremacy.",
+      "developer": "Riot Games",
+      "publisher": "Riot Games",
+      "releaseDate": "2009-10-27",
+      "genre": ["MOBA", "Strategy"],
+      "platforms": ["PC"],
+      "rating": 4.9,
+      "downloads": 200000000,
+      "screenshots": [
+        "assets/games/game7_screenshot1.png",
+        "assets/games/game7_screenshot2.png"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Minecraft",
+      "image": "assets/games/game8.png",
+      "description": "A sandbox game that allows players to build, explore, and survive in a blocky world.",
+      "developer": "Mojang Studios",
+      "publisher": "Mojang Studios",
+      "releaseDate": "2011-11-18",
+      "genre": ["Sandbox", "Adventure", "Survival"],
+      "platforms": ["PC", "PlayStation", "Xbox", "Mobile"],
+      "rating": 4.8,
+      "downloads": 238000000,
+      "screenshots": [
+        "assets/games/game8_screenshot1.png",
+        "assets/games/game8_screenshot2.png",
+        "assets/games/game8_screenshot3.png"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Shapik",
+      "image": "assets/games/game9.png",
+      "description": "A beautiful puzzle adventure game with hand-drawn art.",
+      "developer": "Paul Podberezko",
+      "publisher": "Indie Game Dev",
+      "releaseDate": "2019-12-15",
+      "genre": ["Puzzle", "Adventure"],
+      "platforms": ["PC"],
+      "rating": 4.1,
+      "downloads": 120000,
+      "screenshots": [
+        "assets/games/game9_screenshot1.png",
+        "assets/games/game9_screenshot2.png"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "World of Warships",
+      "image": "assets/games/game10.png",
+      "description": "A naval warfare MMO with a focus on strategic battles.",
+      "developer": "Wargaming Group",
+      "publisher": "Wargaming Group",
+      "releaseDate": "2015-09-17",
+      "genre": ["MMO", "Strategy"],
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "rating": 4.3,
+      "downloads": 3500000,
+      "screenshots": [
+        "assets/games/game10_screenshot1.png",
+        "assets/games/game10_screenshot2.png"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Railgunners",
+      "image": "assets/games/game11.png",
+      "description": "An action-packed rail shooter where you control a futuristic gunship.",
+      "developer": "Indie Studio X",
+      "publisher": "Arcade Fun Games",
+      "releaseDate": "2021-06-10",
+      "genre": ["Shooter", "Action"],
+      "platforms": ["PC", "Xbox Series X"],
+      "rating": 4.2,
+      "downloads": 450000,
+      "screenshots": [
+        "assets/games/game11_screenshot1.png",
+        "assets/games/game11_screenshot2.png"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Faerie Afterlight",
+      "image": "assets/games/game12.png",
+      "description": "A magical platformer with beautiful hand-drawn environments.",
+      "developer": "Clay Game Studio",
+      "publisher": "Mojiken Studio",
+      "releaseDate": "2023-08-01",
+      "genre": ["Platformer", "Adventure"],
+      "platforms": ["PC", "Nintendo Switch"],
+      "rating": 4.5,
+      "downloads": 120000,
+      "screenshots": [
+        "assets/games/game12_screenshot1.png",
+        "assets/games/game12_screenshot2.png"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "HeartBound",
+      "image": "assets/games/game13.png",
+      "description": "An RPG where you control a young boy on a journey to save his pet.",
+      "developer": "Pirate Software",
+      "publisher": "Pirate Software",
+      "releaseDate": "2018-12-24",
+      "genre": ["RPG", "Adventure"],
+      "platforms": ["PC"],
+      "rating": 4.4,
+      "downloads": 50000,
+      "screenshots": [
+        "assets/games/game13_screenshot1.png",
+        "assets/games/game13_screenshot2.png"
+      ]
+    },
     { "id": 14, "title": "SpiderHeck", "image": "assets/games/game14.png" },
     { "id": 15, "title": "Super Skelemania", "image": "assets/games/game15.png" },
     { "id": 16, "title": "Light Fall", "image": "assets/games/game16.png" },
