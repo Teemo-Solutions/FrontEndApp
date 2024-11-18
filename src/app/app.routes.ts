@@ -6,9 +6,11 @@ import { ContactComponent } from "./public/pages/contact/contact.component";
 import { SubscriptionsComponent } from "./public/pages/subscriptions/subscriptions.component";
 import { ProfileComponent } from "./public/pages/profile/profile.component";
 import { GameDetailsComponent } from './TeemoSolutions/components/game-details/game-details.component';
+import { UsersLoginComponent } from "./TeemoSolutions/components/user-login/user-login.component";
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'login', component: UsersLoginComponent},
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'subscriptions', component: SubscriptionsComponent },
@@ -16,9 +18,3 @@ export const routes: Routes = [
   { path: 'game/:id', component: GameDetailsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
