@@ -7,11 +7,12 @@ import {MatAnchor} from "@angular/material/button";
 import {MatToolbar} from "@angular/material/toolbar";
 import {GameListComponent} from "./TeemoSolutions/components/game-list/game-list.component";
 import {TranslateService} from "@ngx-translate/core";
+import {UsersLoginComponent} from "./TeemoSolutions/components/user-login/user-login.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ToolbarContentComponent, FooterContentComponent, MatCardContent, MatCard, MatAnchor, RouterLink, MatToolbar, GameListComponent],
+  imports: [RouterOutlet, ToolbarContentComponent, FooterContentComponent, MatCardContent, MatCard, MatAnchor, RouterLink, MatToolbar, GameListComponent, UsersLoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
