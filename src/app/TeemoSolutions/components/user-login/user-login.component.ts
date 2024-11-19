@@ -21,7 +21,7 @@ import {FormsModule} from "@angular/forms";
 })
 export class UsersLoginComponent implements OnInit {
   users:User[] =[]
-  email: string = '';
+  username: string = '';
   password: string = '';
   errorMessage: string = '';
 
@@ -48,7 +48,7 @@ export class UsersLoginComponent implements OnInit {
   }
 
   loginUser() {
-    const user = this.users.find(user => user.email === this.email);
+    const user = this.users.find(user => user.username === this.username);
     if (user) {
       if (user.password === this.password) {
         this.router.navigate(['/home',user.id,user.role]);

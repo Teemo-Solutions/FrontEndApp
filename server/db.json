@@ -249,5 +249,13 @@
     { "id": 34, "title": "Raji: An Ancient Epic", "image": "assets/games/game34.png" },
     { "id": 35, "title": "Pile Up", "image": "assets/games/game35.png" },
     { "id": 36, "title": "Only if", "image": "assets/games/game36.png" }
-  ]
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "email": "admin@gmail.com"
+    }
+    ]
 }
