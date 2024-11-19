@@ -28,8 +28,9 @@ import { GameService } from '../../services/game.service';
             </div>
           </section>
 
-          <section class="download-section">
-            <button (click)="downloadGame()" class="download-button">Download Game</button>
+          <section class="action-buttons">
+            <button (click)="downloadGame()" class="action-button download-button">Download Game</button>
+            <button (click)="viewComments()" class="action-button comments-button">View Comments</button>
           </section>
         </div>
 
@@ -161,27 +162,37 @@ import { GameService } from '../../services/game.service';
       font-weight: bold;
     }
 
-    .download-section {
+    .action-buttons {
+      display: flex;
+      gap: 10px;
       margin-top: 20px;
+    }
+
+    .action-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     .download-button {
       background-color: #4CAF50;
-      border: none;
       color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
     }
 
     .download-button:hover {
       background-color: #45a049;
+    }
+
+    .comments-button {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    .comments-button:hover {
+      background-color: #007B9A;
     }
 
     @media (max-width: 768px) {
@@ -218,6 +229,10 @@ export class GameDetailsComponent implements OnInit {
   }
 
   downloadGame() {
-    this.router.navigate(['/download', this.game.id]);
+    this.router.navigate(['/download', this.game.title]);
+  }
+
+  viewComments() {
+    this.router.navigate(['/comments', this.game.id]);
   }
 }
