@@ -8,6 +8,8 @@ import { ProfileComponent } from "./public/pages/profile/profile.component";
 import { GameDetailsComponent } from './TeemoSolutions/components/game-details/game-details.component';
 import { UsersLoginComponent } from "./TeemoSolutions/components/user-login/user-login.component";
 import {UsersSignInComponent} from "./TeemoSolutions/components/users-sing-in/users-sing-in.component";
+import { DownloadSimulationComponent } from "./TeemoSolutions/components/download-simulation/download-simulation.component";
+import { GameCommentsComponent } from "./TeemoSolutions/components/game-comments/game-coments.component";
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -18,5 +20,7 @@ export const routes: Routes = [
   { path: 'subscriptions', component: SubscriptionsComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'game/:id', component: GameDetailsComponent },
+  { path: 'comments/:id', component: GameCommentsComponent },
+  { path: 'download/:title', component: DownloadSimulationComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
