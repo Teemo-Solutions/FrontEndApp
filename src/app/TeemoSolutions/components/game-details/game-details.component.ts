@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { GameService } from '../../services/game.service';
 
 @Component({
@@ -26,6 +26,10 @@ import { GameService } from '../../services/game.service';
             <div class="screenshots">
               <img *ngFor="let screenshot of game.screenshots" [src]="screenshot" alt="Screenshot" class="screenshot">
             </div>
+          </section>
+
+          <section class="download-section">
+            <button (click)="downloadGame()" class="download-button">Download Game</button>
           </section>
         </div>
 
@@ -157,6 +161,29 @@ import { GameService } from '../../services/game.service';
       font-weight: bold;
     }
 
+    .download-section {
+      margin-top: 20px;
+    }
+
+    .download-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-button:hover {
+      background-color: #45a049;
+    }
+
     @media (max-width: 768px) {
       .content {
         flex-direction: column;
@@ -173,6 +200,7 @@ export class GameDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private gameService: GameService
   ) {}
 
@@ -187,5 +215,9 @@ export class GameDetailsComponent implements OnInit {
         error => console.error('Error fetching game details:', error)
       );
     }
+  }
+
+  downloadGame() {
+    this.router.navigate(['/download', this.game.id]);
   }
 }
