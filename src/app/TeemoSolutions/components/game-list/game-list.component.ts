@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { GameService } from '../../services/game.service';
 import { GameCardComponent } from '../game-card/game-card.component';
 
@@ -22,6 +23,8 @@ import { GameCardComponent } from '../game-card/game-card.component';
           <option value="rating">Sort by Rating</option>
           <option value="releaseDate">Sort by Release Date</option>
         </select>
+
+        <button class="add-game-button" routerLink="/add-game">Add New Game</button>
       </div>
 
       <div class="games-grid">
@@ -33,7 +36,7 @@ import { GameCardComponent } from '../game-card/game-card.component';
     </div>
   `,
   styleUrls: ['./game-list.component.css'],
-  imports: [CommonModule, FormsModule, GameCardComponent]
+  imports: [CommonModule, FormsModule, RouterModule, GameCardComponent]
 })
 export class GameListComponent implements OnInit {
   games: any[] = [];
