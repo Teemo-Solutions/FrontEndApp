@@ -622,5 +622,13 @@
         "assets/games/game36_screenshot2.png"
       ]
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "email": "admin@gmail.com"
+    }
   ]
 }
