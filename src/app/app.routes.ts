@@ -10,6 +10,7 @@ import { UsersLoginComponent } from "./TeemoSolutions/components/user-login/user
 import {UsersSignInComponent} from "./TeemoSolutions/components/users-sing-in/users-sing-in.component";
 import { DownloadSimulationComponent } from "./TeemoSolutions/components/download-simulation/download-simulation.component";
 import { GameCommentsComponent } from "./TeemoSolutions/components/game-comments/game-coments.component";
+import { AddGameComponent } from "./TeemoSolutions/components/add-game/add-game.component";
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -22,5 +23,6 @@ export const routes: Routes = [
   { path: 'game/:id', component: GameDetailsComponent },
   { path: 'comments/:id', component: GameCommentsComponent },
   { path: 'download/:title', component: DownloadSimulationComponent },
+  { path: 'add-game', component: AddGameComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
