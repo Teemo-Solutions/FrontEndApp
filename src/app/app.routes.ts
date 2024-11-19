@@ -7,10 +7,12 @@ import { SubscriptionsComponent } from "./public/pages/subscriptions/subscriptio
 import { ProfileComponent } from "./public/pages/profile/profile.component";
 import { GameDetailsComponent } from './TeemoSolutions/components/game-details/game-details.component';
 import { UsersLoginComponent } from "./TeemoSolutions/components/user-login/user-login.component";
+import {UsersSignInComponent} from "./TeemoSolutions/components/users-sing-in/users-sing-in.component";
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: UsersLoginComponent},
+  { path: 'sign-in', component: UsersSignInComponent},
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'subscriptions', component: SubscriptionsComponent },

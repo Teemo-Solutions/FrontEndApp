@@ -44,7 +44,7 @@ export class UsersLoginComponent implements OnInit {
   }
 
   redirectToSignin() {
-    this.router.navigate(['/sign-in']);
+    this.router.navigate(['sign-in']);
   }
 
   loginUser() {
