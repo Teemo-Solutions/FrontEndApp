@@ -8,8 +8,8 @@ import { ActivatedRoute } from '@angular/router';
   imports: [CommonModule],
   template: `
     <div class="download-simulation">
-      <h1>Descargando Juego...</h1>
-      <p>Simulando la descarga del juego con ID: {{ gameId }}</p>
+      <h1>Descargando Juego</h1>
+      <p>Espera mientras se descarga: {{ gameTitle }}</p>
       <div class="loading-bar">
         <div class="progress"></div>
       </div>
@@ -19,11 +19,12 @@ import { ActivatedRoute } from '@angular/router';
     .download-simulation {
       font-family: Arial, sans-serif;
       color: #ffffff;
-      max-width: 600px;
+      max-height: 950px;
+      max-width: 750px;
       margin: 100px auto;
       padding: 20px;
       background-color: #300D30;
-      border-radius: 8px;
+      border-radius: 18px;
       text-align: center;
     }
 
@@ -58,11 +59,11 @@ import { ActivatedRoute } from '@angular/router';
   `]
 })
 export class DownloadSimulationComponent implements OnInit {
-  gameId: string | null = null;
+  gameTitle: string | null = null;
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.gameId = this.route.snapshot.paramMap.get('id');
+    this.gameTitle = this.route.snapshot.paramMap.get('title');
   }
 }
