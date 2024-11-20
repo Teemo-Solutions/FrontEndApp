@@ -1,8 +1,21 @@
-
 <div class="profile-details">
-  <h3>Welcome! {{ name }}</h3>
-  <ul>
+  <h3>Welcome! {{ username }}</h3>
+  <ul *ngIf="!isEditing">
     <li><strong>Email:</strong> {{ email }}</li>
-    <li><strong>Phone:</strong> {{ phone }}</li>
   </ul>
+  <div *ngIf="isEditing">
+    <label>
+      <strong>Username:</strong>
+      <input matInput [(ngModel)]="username" />
+    </label>
+    <label>
+      <strong>Email:</strong>
+      <input matInput [(ngModel)]="email" />
+    </label>
+  </div>
+  <div class="profile-action">
+    <button mat-raised-button color="primary" *ngIf="!isEditing" (click)="editProfile()">Edit</button>
+    <button mat-raised-button color="primary" *ngIf="isEditing" (click)="saveProfile()">Save</button>
+    <button mat-raised-button color="primary" *ngIf="isEditing" (click)="cancelEdit()">Cancel</button>
+  </div>
 </div>

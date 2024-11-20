@@ -1,20 +1,17 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-
-import {BaseService} from "../../shared/base.service";
-import {Gamer} from "../models/gamer.entity";
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Gamer } from '../models/gamer.entity';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GamersApiService extends BaseService<Gamer>{
+export class GamersApiService {
+  private apiUrl = 'http://localhost:3000/gamers';
 
-  constructor(http: HttpClient) {
-    super(http);
-    this.resourceEndpoint = '/students';
-  }
+  constructor(private http: HttpClient) {}
 
-  getByUserId(userId: string) {
-    return this._http.get<Gamer>(`${this.resourcePath()}?user_id=${userId}`);
+  post(gamer: Gamer): Observable<Gamer> {
+    return this.http.post<Gamer>(this.apiUrl, gamer);
   }
 }

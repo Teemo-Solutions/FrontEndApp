@@ -628,7 +628,12 @@
       "id": 1,
       "username": "admin",
       "password": "admin",
-      "email": "admin@gmail.com"
+      "email": "admin@gmail.com",
+      "role": "gamer",
+      "friends": [
+        { "name": "Friend 1", "avatar": "path/to/avatar1.jpg", "color": "#ffcc00" },
+        { "name": "Friend 2", "avatar": "path/to/avatar2.jpg", "color": "#ff9900" }
+      ]
     }
   ]
 }

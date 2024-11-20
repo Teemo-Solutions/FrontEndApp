@@ -2,7 +2,7 @@ import {AfterContentInit, Component, OnInit} from '@angular/core';
 import {MatButton} from "@angular/material/button";
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-import {UsersApiService} from "../../services/users-api.service";
+import { UsersApiService } from "../../services/users-api.service";
 import {User} from "../../models/user.entity";
 import { Router } from '@angular/router';
 import {FormsModule} from "@angular/forms";

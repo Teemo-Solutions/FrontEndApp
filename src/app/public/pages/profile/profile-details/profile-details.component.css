@@ -10,3 +10,8 @@
 .profile-details li {
   margin: 10px 0;
 }
+
+.profile-action {
+  text-align: center;
+  margin-top: 20px;
+}
