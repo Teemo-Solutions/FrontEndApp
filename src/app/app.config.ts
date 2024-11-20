@@ -2,7 +2,7 @@ import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } fr
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { HttpClient, provideHttpClient } from '@angular/common/http'; // Asegúrate de importar provideHttpClient
+import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -10,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { GameDetailsComponent } from './TeemoSolutions/components/game-details/game-details.component';
+
 // Configuración para TranslateLoader
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,10 +31,10 @@ export const appConfig: ApplicationConfig = {
         }
       })
     ),
-    MatFormFieldModule,
-    MatInputModule,
-    MatIconModule,
-    MatButtonModule,
-    GameDetailsComponent
+    importProvidersFrom(MatFormFieldModule),
+    importProvidersFrom(MatInputModule),
+    importProvidersFrom(MatIconModule),
+    importProvidersFrom(MatButtonModule),
+    GameDetailsComponent,
   ]
 };

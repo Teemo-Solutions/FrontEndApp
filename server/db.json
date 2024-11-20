@@ -226,28 +226,414 @@
         "assets/games/game13_screenshot2.png"
       ]
     },
-    { "id": 14, "title": "SpiderHeck", "image": "assets/games/game14.png" },
-    { "id": 15, "title": "Super Skelemania", "image": "assets/games/game15.png" },
-    { "id": 16, "title": "Light Fall", "image": "assets/games/game16.png" },
-    { "id": 17, "title": "SpiritWell", "image": "assets/games/game17.png" },
-    { "id": 18, "title": "Mayhem in single valley", "image": "assets/games/game18.png" },
-    { "id": 19, "title": "Vault", "image": "assets/games/game19.png" },
-    { "id": 20, "title": "Manacircle", "image": "assets/games/game20.png" },
-    { "id": 21, "title": "Dragon ball Sparking Zero", "image": "assets/games/game21.png" },
-    { "id": 22, "title": "My red Panda", "image": "assets/games/game22.png" },
-    { "id": 23, "title": "Eternal Hope", "image": "assets/games/game23.png" },
-    { "id": 24, "title": "Golden Light", "image": "assets/games/game24.png" },
-    { "id": 25, "title": "Toasty: Ashes of Dusk", "image": "assets/games/game25.png" },
-    { "id": 26, "title": "Catju Adventures", "image": "assets/games/game26.png" },
-    { "id": 27, "title": "WARBORN", "image": "assets/games/game27.png" },
-    { "id": 28, "title": "Scarlet Hollow", "image": "assets/games/game28.png" },
-    { "id": 29, "title": "The Captain", "image": "assets/games/game29.png" },
-    { "id": 30, "title": "Pixel Heist", "image": "assets/games/game30.png" },
-    { "id": 31, "title": "Paper Tanks", "image": "assets/games/game31.png" },
-    { "id": 32, "title": "Rabbit story", "image": "assets/games/game32.png" },
-    { "id": 33, "title": "Underhero", "image": "assets/games/game33.png" },
-    { "id": 34, "title": "Raji: An Ancient Epic", "image": "assets/games/game34.png" },
-    { "id": 35, "title": "Pile Up", "image": "assets/games/game35.png" },
-    { "id": 36, "title": "Only if", "image": "assets/games/game36.png" }
+    {
+      "id": 14,
+      "title": "SpiderHeck",
+      "image": "assets/games/game14.png",
+      "description": "A fantastic adventure game of a spider.",
+      "developer": "Giants Software",
+      "publisher": "Focus Home Interactive",
+      "releaseDate": "2023-11-22",
+      "genre": ["Adventure"],
+      "platforms": ["PC", "PlayStation 5", "Xbox Series X"],
+      "rating": 4.6,
+      "downloads": 200000,
+      "screenshots": [
+        "assets/games/game14_screenshot1.png",
+        "assets/games/game14_screenshot2.png"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "SKELEMANIA",
+      "image": "assets/games/game15.png",
+      "description": "An open-world action RPG set in a dystopian future where players navigate a sprawling city filled with cybernetic enhancements and moral dilemmas.",
+      "developer": "CD Projekt Red",
+      "publisher": "CD Projekt",
+      "releaseDate": "2020-12-10",
+      "genre": ["Action", "RPG", "Open World"],
+      "platforms": ["PC", "PlayStation 5", "Xbox Series X"],
+      "rating": 4.0,
+      "downloads": 18000000,
+      "screenshots": [
+        "assets/games/game15_screenshot1.png",
+        "assets/games/game15_screenshot2.png",
+        "assets/games/game15_screenshot3.png"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Light Fall",
+      "image": "assets/games/game16.png",
+      "description": "An action RPG developed by FromSoftware that takes place in a dark fantasy world filled with brutal combat and lore-rich storytelling.",
+      "developer": "FromSoftware",
+      "publisher": "Bandai Namco Entertainment",
+      "releaseDate": "2022-02-25",
+      "genre": ["Action", "RPG"],
+      "platforms": ["PC", "PlayStation 5", "Xbox Series X"],
+      "rating": 4.9,
+      "downloads": 17000000,
+      "screenshots": [
+        "assets/games/game16_screenshot1.png",
+        "assets/games/game16_screenshot2.png",
+        "assets/games/game16_screenshot3.png"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "SpiritWell",
+      "image": "assets/games/game17.png",
+      "description": "A multiplayer game of teamwork and betrayal set on a space station, where players must complete tasks or eliminate impostors.",
+      "developer": "Innersloth",
+      "publisher": "Innersloth",
+      "releaseDate": "2018-06-15",
+      "genre": ["Party", "Multiplayer"],
+      "platforms": ["PC", "Mobile", "Nintendo Switch"],
+      "rating": 4.6,
+      "downloads": 500000000,
+      "screenshots": [
+        "assets/games/game17_screenshot1.png",
+        "assets/games/game17_screenshot2.png"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "MAYHEM",
+      "image": "assets/games/game18.png",
+      "description": "A farming simulation and role-playing game where players grow crops, raise animals, and build relationships with villagers.",
+      "developer": "ConcernedApe",
+      "publisher": "ConcernedApe",
+      "releaseDate": "2016-02-26",
+      "genre": ["Simulation", "RPG"],
+      "platforms": ["PC", "Nintendo Switch", "PlayStation", "Xbox"],
+      "rating": 4.8,
+      "downloads": 20000000,
+      "screenshots": [
+        "assets/games/game18_screenshot1.png",
+        "assets/games/game18_screenshot2.png"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "octallery",
+      "image": "assets/games/game19.png",
+      "description": "A team-based multiplayer shooter where players select heroes with unique abilities and battle across various modes and maps.",
+      "developer": "Blizzard Entertainment",
+      "publisher": "Blizzard Entertainment",
+      "releaseDate": "2022-10-04",
+      "genre": ["Shooter", "Multiplayer"],
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+      "rating": 4.3,
+      "downloads": 15000000,
+      "screenshots": [
+        "assets/games/game19_screenshot1.png",
+        "assets/games/game19_screenshot2.png"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Mana Circle",
+      "image": "assets/games/game20.png",
+      "description": "A tactical first-person shooter where players take on the roles of agents with unique abilities in a 5v5 team-based competition.",
+      "developer": "Riot Games",
+      "publisher": "Riot Games",
+      "releaseDate": "2020-06-02",
+      "genre": ["Shooter", "Multiplayer"],
+      "platforms": ["PC"],
+      "rating": 4.7,
+      "downloads": 14000000,
+      "screenshots": [
+        "assets/games/game20_screenshot1.png",
+        "assets/games/game20_screenshot2.png"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Dragon Ball: Sparking Zero",
+      "image": "assets/games/game21.png",
+      "description": "A life simulation game where players move to a deserted island and build their ideal community of animal neighbors.",
+      "developer": "Nintendo",
+      "publisher": "Nintendo",
+      "releaseDate": "2020-03-20",
+      "genre": ["Simulation", "Life"],
+      "platforms": ["Nintendo Switch"],
+      "rating": 4.9,
+      "downloads": 33000000,
+      "screenshots": [
+        "assets/games/game21_screenshot1.png",
+        "assets/games/game21_screenshot2.png",
+        "assets/games/game21_screenshot3.png"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "My Red Panda",
+      "image": "assets/games/game22.png",
+      "description": "A battle royale game where players fight to be the last person standing on a shrinking map.",
+      "developer": "Epic Games",
+      "publisher": "Epic Games",
+      "releaseDate": "2017-07-25",
+      "genre": ["Battle Royale", "Multiplayer"],
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch", "Mobile"],
+      "rating": 4.5,
+      "downloads": 400000000,
+      "screenshots": [
+        "assets/games/game22_screenshot1.png",
+        "assets/games/game22_screenshot2.png"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Eternal Hope",
+      "image": "assets/games/game23.png",
+      "description": "A free-to-play battle royale game that features fast-paced action and squad-based gameplay in large-scale maps.",
+      "developer": "Infinity Ward",
+      "publisher": "Activision",
+      "releaseDate": "2020-03-10",
+      "genre": ["Battle Royale", "Shooter"],
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "rating": 4.6,
+      "downloads": 125000000,
+      "screenshots": [
+        "assets/games/game23_screenshot1.png",
+        "assets/games/game23_screenshot2.png",
+        "assets/games/game23_screenshot3.png"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Golden Light",
+      "image": "assets/games/game24.png",
+      "description": "A rogue-lite action platformer with a focus on fast-paced combat and exploration.",
+      "developer": "Motion Twin",
+      "publisher": "Motion Twin",
+      "releaseDate": "2018-08-07",
+      "genre": ["Platformer", "Rogue-lite"],
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+      "rating": 4.8,
+      "downloads": 5000000,
+      "screenshots": [
+        "assets/games/game24_screenshot1.png",
+        "assets/games/game24_screenshot2.png"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Toasty",
+      "image": "assets/games/game25.png",
+      "description": "An open-world action-adventure game set in feudal Japan, following the story of a samurai defending his home from invaders.",
+      "developer": "Sucker Punch Productions",
+      "publisher": "Sony Interactive Entertainment",
+      "releaseDate": "2020-07-17",
+      "genre": ["Action", "Adventure"],
+      "platforms": ["PlayStation 4", "PlayStation 5"],
+      "rating": 4.9,
+      "downloads": 9000000,
+      "screenshots": [
+        "assets/games/game25_screenshot1.png",
+        "assets/games/game25_screenshot2.png",
+        "assets/games/game25_screenshot3.png"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "CATJU",
+      "image": "assets/games/game26.png",
+      "description": "A rogue-like dungeon crawler where players battle through the Underworld as Zagreus, the son of Hades.",
+      "developer": "Supergiant Games",
+      "publisher": "Supergiant Games",
+      "releaseDate": "2020-09-17",
+      "genre": ["Rogue-like", "Action"],
+      "platforms": ["PC", "Nintendo Switch", "PlayStation", "Xbox"],
+      "rating": 4.9,
+      "downloads": 5000000,
+      "screenshots": [
+        "assets/games/game26_screenshot1.png",
+        "assets/games/game26_screenshot2.png"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "WARBORN",
+      "image": "assets/games/game27.png",
+      "description": "An action RPG that lets players experience the life of a Viking raider in an open-world recreation of England's Dark Ages.",
+      "developer": "Ubisoft",
+      "publisher": "Ubisoft",
+      "releaseDate": "2020-11-10",
+      "genre": ["Action", "RPG", "Adventure"],
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "rating": 4.7,
+      "downloads": 12000000,
+      "screenshots": [
+        "assets/games/game27_screenshot1.png",
+        "assets/games/game27_screenshot2.png"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Scarlet Hollow",
+      "image": "assets/games/game28.png",
+      "description": "A supernatural action-adventure game where players explore a secretive government building filled with paranormal phenomena.",
+      "developer": "Remedy Entertainment",
+      "publisher": "505 Games",
+      "releaseDate": "2019-08-27",
+      "genre": ["Action", "Adventure"],
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "rating": 4.5,
+      "downloads": 3000000,
+      "screenshots": [
+        "assets/games/game28_screenshot1.png",
+        "assets/games/game28_screenshot2.png"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "The captain",
+      "image": "assets/games/game29.png",
+      "description": "A challenging action-adventure game set in a beautifully dark, hand-drawn underground world.",
+      "developer": "Team Cherry",
+      "publisher": "Team Cherry",
+      "releaseDate": "2017-02-24",
+      "genre": ["Platformer", "Adventure"],
+      "platforms": ["PC", "Nintendo Switch", "PlayStation", "Xbox"],
+      "rating": 4.8,
+      "downloads": 2500000,
+      "screenshots": [
+        "assets/games/game29_screenshot1.png",
+        "assets/games/game29_screenshot2.png"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Polygon Heist Pack",
+      "image": "assets/games/game30.png",
+      "description": "An open-world adventure where players control Link, exploring a vast kingdom and solving puzzles.",
+      "developer": "Nintendo",
+      "publisher": "Nintendo",
+      "releaseDate": "2017-03-03",
+      "genre": ["Adventure", "RPG"],
+      "platforms": ["Nintendo Switch"],
+      "rating": 4.9,
+      "downloads": 28000000,
+      "screenshots": [
+        "assets/games/game30_screenshot1.png",
+        "assets/games/game30_screenshot2.png"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Paper Tanks",
+      "image": "assets/games/game31.png",
+      "description": "A free-to-play battle royale game set in the Titanfall universe with unique characters and abilities.",
+      "developer": "Respawn Entertainment",
+      "publisher": "Electronic Arts",
+      "releaseDate": "2019-02-04",
+      "genre": ["Battle Royale", "Shooter"],
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+      "rating": 4.4,
+      "downloads": 100000000,
+      "screenshots": [
+        "assets/games/game31_screenshot1.png",
+        "assets/games/game31_screenshot2.png"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Rabbit Story",
+      "image": "assets/games/game32.png",
+      "description": "A platformer about climbing a mountain, featuring challenging gameplay and a heartfelt story.",
+      "developer": "Maddy Makes Games",
+      "publisher": "Maddy Makes Games",
+      "releaseDate": "2018-01-25",
+      "genre": ["Platformer"],
+      "platforms": ["PC", "Nintendo Switch", "PlayStation", "Xbox"],
+      "rating": 4.7,
+      "downloads": 1000000,
+      "screenshots": [
+        "assets/games/game32_screenshot1.png",
+        "assets/games/game32_screenshot2.png"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Under Hero",
+      "image": "assets/games/game33.png",
+      "description": "An action RPG where players hunt massive monsters in various ecosystems.",
+      "developer": "Capcom",
+      "publisher": "Capcom",
+      "releaseDate": "2018-01-26",
+      "genre": ["Action", "RPG"],
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "rating": 4.6,
+      "downloads": 21000000,
+      "screenshots": [
+        "assets/games/game33_screenshot1.png",
+        "assets/games/game33_screenshot2.png"
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Raji: An Ancient Epic",
+      "image": "assets/games/game34.png",
+      "description": "A dark and challenging action RPG with gothic visuals and punishing gameplay.",
+      "developer": "FromSoftware",
+      "publisher": "Bandai Namco Entertainment",
+      "releaseDate": "2016-04-12",
+      "genre": ["Action", "RPG"],
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "rating": 4.8,
+      "downloads": 10000000,
+      "screenshots": [
+        "assets/games/game34_screenshot1.png",
+        "assets/games/game34_screenshot2.png"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "PILE UP!",
+      "image": "assets/games/game35.png",
+      "description": "A 3D platformer where Mario explores diverse worlds to rescue Princess Peach from Bowser.",
+      "developer": "Nintendo",
+      "publisher": "Nintendo",
+      "releaseDate": "2017-10-27",
+      "genre": ["Platformer", "Adventure"],
+      "platforms": ["Nintendo Switch"],
+      "rating": 4.9,
+      "downloads": 23000000,
+      "screenshots": [
+        "assets/games/game35_screenshot1.png",
+        "assets/games/game35_screenshot2.png"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Only if",
+      "image": "assets/games/game36.png",
+      "description": "A survival horror game set in a mysterious village with a dark and immersive story.",
+      "developer": "Capcom",
+      "publisher": "Capcom",
+      "releaseDate": "2021-05-07",
+      "genre": ["Horror", "Action"],
+      "platforms": ["PC", "PlayStation", "Xbox"],
+      "rating": 4.7,
+      "downloads": 8000000,
+      "screenshots": [
+        "assets/games/game36_screenshot1.png",
+        "assets/games/game36_screenshot2.png"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "email": "admin@gmail.com",
+      "role": "gamer",
+      "friends": [
+        { "name": "Friend 1", "avatar": "path/to/avatar1.jpg", "color": "#ffcc00" },
+        { "name": "Friend 2", "avatar": "path/to/avatar2.jpg", "color": "#ff9900" }
+      ]
+    }
   ]
 }

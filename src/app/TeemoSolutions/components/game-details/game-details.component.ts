@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { GameService } from '../../services/game.service';
 
 @Component({
@@ -26,6 +26,11 @@ import { GameService } from '../../services/game.service';
             <div class="screenshots">
               <img *ngFor="let screenshot of game.screenshots" [src]="screenshot" alt="Screenshot" class="screenshot">
             </div>
+          </section>
+
+          <section class="action-buttons">
+            <button (click)="downloadGame()" class="action-button download-button">Download Game</button>
+            <button (click)="viewComments()" class="action-button comments-button">View Comments</button>
           </section>
         </div>
 
@@ -157,6 +162,39 @@ import { GameService } from '../../services/game.service';
       font-weight: bold;
     }
 
+    .action-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .action-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-button {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .download-button:hover {
+      background-color: #45a049;
+    }
+
+    .comments-button {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    .comments-button:hover {
+      background-color: #007B9A;
+    }
+
     @media (max-width: 768px) {
       .content {
         flex-direction: column;
@@ -173,6 +211,7 @@ export class GameDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private gameService: GameService
   ) {}
 
@@ -187,5 +226,13 @@ export class GameDetailsComponent implements OnInit {
         error => console.error('Error fetching game details:', error)
       );
     }
+  }
+
+  downloadGame() {
+    this.router.navigate(['/download', this.game.title]);
+  }
+
+  viewComments() {
+    this.router.navigate(['/comments', this.game.id]);
   }
 }
